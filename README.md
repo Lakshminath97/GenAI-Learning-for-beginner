@@ -100,6 +100,77 @@ But the larger context windows provide challenges
 **Day 4:** Promting practice
 Use OpenAI Playground/ChatGPT/Claude: Play with prompts
 
+🧪 Prompting Exercises (Beginner to Intermediate)
+
+📌 1. Role-Based Prompting
+📝 Prompt:
+“You are a career coach. Give me 3 suggestions to improve my resume for a software engineering job.”
+
+🎯 Goal: Test how the assistant changes tone, depth, and advice depending on the assigned role.
+
+👉 Variation:
+
+Change “career coach” to “HR manager” or “hiring manager at Google.”
+
+📌 2. Instruction vs Chat
+📝 Prompt 1 (Instruction):
+“Summarize the paragraph below in 2 bullet points.”
+Then paste some long text.
+
+📝 Prompt 2 (Chat):
+“I just read this long article but don’t have time to go through all of it. Can you explain the key points in simple terms?”
+
+🎯 Goal: See how the model changes response between direct command and conversational tone.
+
+📌 3. Chain-of-Thought Prompting
+📝 Prompt:
+“If Sam has 2 red balls and 3 green balls, and gives away 1 red and 2 green balls, how many are left? Think step by step.”
+
+🎯 Goal: Trigger reasoning by using “Think step by step.”
+
+👉 Try without that phrase and compare.
+
+📌 4. Creative Prompting
+📝 Prompt:
+“Write a bedtime story about a lonely asteroid that becomes friends with a comet. Make it poetic and under 150 words.”
+
+🎯 Goal: Stimulate the model’s creativity and tone control.
+
+👉 Variation: “Make it a Shakespearean play” or “Write it like a Reddit story.”
+
+📌 5. Prompt Compression
+📝 Prompt:
+Give a very long paragraph (e.g., Wikipedia article). Then ask:
+“Summarize this in 1 sentence.”
+“Now in 5 words.”
+“Now using only emojis.”
+
+🎯 Goal: Explore how LLMs compress information.
+
+📌 6. Bias Detection
+📝 Prompt:
+“Describe a doctor.”
+“Describe a nurse.”
+“Describe a CEO.”
+
+🎯 Goal: Observe and identify implicit societal biases in LLMs and learn to write neutral prompts.
+
+📌 7. Prompt Rewriting
+📝 Prompt:
+“Rewrite the following prompt to improve clarity and structure for an AI system:
+‘Help me with Java problems.’”
+
+🎯 Goal: Learn how to engineer better prompts by rewriting vague ones.
+
+📌 8. Prompt Temperature Testing (in Playground)
+Use the same prompt, e.g.,
+“Write a tweet about AI for beginners.”
+Try temperatures 0.2, 0.7, and 1.0.
+
+🎯 Goal: Understand randomness and creativity control using temperature.
+
+
+
 **Day 4:** Promting template
 
 1. Instructional prompt 
@@ -135,7 +206,12 @@ Common mistake to avoid
 3. ⁠no task given 
 4. ⁠Ignoring tones or styles
 
-   
+**Day 6:** Advanced Prompting (ReAct promting, self ask, tree-of-thought (ToT))
+
+**Day 7:** Prompt crafting
+Build a promt based mini tool (eg. resume critic or email writer)
+
+
 
 ## 📚 Topics I’m Learning
 - Python basics  
