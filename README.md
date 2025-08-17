@@ -12,7 +12,7 @@ I use it as a personal knowledge base and for sharing with others.
 
 **Day 1:** What is GenAI, LLMs, use cases (text, image, code), models (GPT, Claude, LLaMA)
 
-*Day1: What is Gen AI?
+**Day1:** What is Gen AI?
 Gen AI produces original contents based on things learned on large datasets and algorithms based on user prompts
 
 Steps in Gen AI:
@@ -116,6 +116,26 @@ Common mistake to avoid
 - Forgetting audience 
 - ⁠too ambiguous 
 - ⁠not reviewing output
+
+2.  Role based prompt 
+
+Prompting based on role 
+Structure : 
+1. Assign the role (like coach)
+2. ⁠define the task (help switch to data science)
+3. ⁠add style tone or constrain (in simple way)
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/ec82d75e-ca08-469b-8a7b-961174ee3e3e" />
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/0e54a61b-9e42-4bd8-b6af-2077476e2ed1" />
+
+Common mistake to avoid 
+1. Vague roles 
+2. ⁠mismatched roles
+3. ⁠no task given 
+4. ⁠Ignoring tones or styles
+
+   
 
 ## 📚 Topics I’m Learning
 - Python basics  
