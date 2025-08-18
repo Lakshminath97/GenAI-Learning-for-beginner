@@ -7,7 +7,7 @@ I use it as a personal knowledge base and for sharing with others.
 
 **Table of Contents**
 ---
-* [Level 1 : Foundations & Prompting] (Learnings.md/#Level-1-Foundations & Prompting)
+* [Level 1 : Foundations & Prompting] (Learnings.md#Level-1-Foundations & Prompting)
 * Level 2 : APIs, Tools & Fine-Tuning
 * Level 3 : Retrieval-Augmented Learning (RAG)
 * Level 4 : Agents, Workflow & Advanced Concepts
