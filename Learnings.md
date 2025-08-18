@@ -213,7 +213,60 @@ Common mistake to avoid
 4. ⁠Ignoring tones or styles
 
 ## **Advanced Prompting**
-ReAct promting, self ask, tree-of-thought (ToT)
+
+1. ReAct Prompting (Reason + Act)
+
+#### Concept:
+ReAct combines thinking (reasoning) and action in a step-by-step way. The AI not only thinks through a problem but also performs actions like searching, calculating, or using tools, in the same process.
+#### Analogy:
+Imagine you are cooking a new recipe. You think (“I need to chop onions first”) and then act (“chop the onions”). You repeat this until the dish is done.
+
+#### Example:
+
+**Question**: “What’s the capital of the country that has the Eiffel Tower?”
+ReAct-style reasoning and action:
+Reason: “Eiffel Tower is in France.”
+Act: “Look up the capital of France.”
+**Answer**: “The capital is Paris.”
+
+##### Key idea: AI thinks and acts together, instead of giving a direct answer blindly.
+
+2. Self-Ask Prompting
+
+#### Concept:
+Self-Ask is like breaking a big question into smaller questions. The AI answers each smaller question and then combines them to solve the main question.
+#### Analogy:
+If someone asks you: “What is the tallest building in the city with the most people in the world?”
+You first ask yourself: “Which city has the most people?”
+Then: “What is the tallest building in that city?”
+
+#### Example:
+
+**Question**: “Which river flows through the city where the Statue of Liberty is?”
+Self-Ask Step 1: “Where is the Statue of Liberty?” → “New York City.”
+Self-Ask Step 2: “Which river flows through New York City?” → “The Hudson River.”
+**Final Answer**: “The Hudson River.”
+
+##### Key idea: AI asks itself smaller questions to get a more accurate answer.
+
+3. Tree-of-Thought (ToT) Prompting
+
+#### Concept:
+ToT is like building a tree of possible reasoning paths. The AI explores multiple ways to solve a problem, checks them, and then picks the best one.
+#### Analogy:
+Imagine you are choosing a route to travel to a new city. You consider Route A, Route B, and Route C. You evaluate which is fastest, shortest, or scenic, then choose the best route.
+
+#### Example:
+
+**Question**: “What’s the best pet for a small apartment?”
+**Tree-of-Thought Process**:
+Option 1: Dog → Needs lots of space → Not ideal.
+Option 2: Cat → Doesn’t need much space → Good choice.
+Option 3: Fish → Easy to maintain → Also good choice.
+
+**Conclusion**: Cat or fish are ideal; dog is not.
+
+##### Key idea: AI branches out different possibilities, reasons about each, and chooses the best solution.
 
 ## Prompt crafting
 Build a promt based mini tool (eg. resume critic or email writer)
