@@ -5,12 +5,12 @@ Table of Contents
 ---
 
 - [Task 1 : Intro to Gen AI](#what-is-genai)
-- Task 2 : LLMs 
-- Task 3 : Prompting basics
-- Task 4 : Prompting practice
-- Task 5 : Prompt Templates
-- Task 6 : Advanced Prompting
-- Task 7 : Project 1 - Prompt Crafting
+- [Task 2 : LLMs](#llms-101)
+- [Task 3 : Prompting basics](#promting-basics-types-of-promting-and-llm-settings)
+- [Task 4 : Prompting practice](#promting-practice)
+- [Task 5 : Prompt Templates](#promting-template)
+- [Task 6 : Advanced Prompting](#advanced-prompting)
+- [Task 7 : Project 1 - Prompt Crafting](#prompt-crafting)
 
 ---
 
@@ -18,7 +18,7 @@ Table of Contents
 
 Gen AI produces original contents based on things learned on large datasets and algorithms based on user prompts
 
-**Steps in Gen AI:**
+### Steps in Gen AI:
 
 1. Data collection and learning 
 2. ⁠neural networks and transformers 
@@ -34,29 +34,32 @@ Gen AI produces original contents based on things learned on large datasets and 
 7.  Generating original content 
     (A unique image produced based on things learned)
 
-**Block Diagram : **
+### Block Diagram :
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/b54cfd2b-d495-446a-9873-eb35a399eca6" />
 
-**Day 2:** LLMs 101 [Transformer architecture, pretraining vs fine-tuning, tokens, context window]
+## **LLMs 101** 
+[Transformer architecture, pretraining vs fine-tuning, tokens, context window]
 
-****Transformers 
+### Transformers 
 - Transforms from one sequence to another 
 - Two parts- encoder and decoder 
 
-Encoder looks into input 
-Decoder to output 
+* Encoder looks into input 
+* Decoder to output 
 For example: transformer works in sequence to sequence learning
 It takes sequence of word in a sentence and predicts next words 
 It works through iterating encoding layers, encoder generates encodings to find which part of input sequence is related to each other and then passes to next encoding layer 
 Decoder takes this encodings or encoding layer and generates output sequence
 
-****Pretraining and fine tuning 
-Transformer are part of semi supervised learning or pre training in unsupervised manner 
+### Pretraining and fine tuning 
+Transformer are part of semi supervised learning or pre-training in unsupervised manner 
 And fine tuned to perform in supervised Manner 
 
-Pretraining in general refers to trainign a base model with set of data sets and thus learns the context of data sets 
+* Pretraining in general refers to training a base model with set of data sets and thus learns the context of data sets 
 
-Fine tuning - tuning whole part or training pre training model to train for a specific task
+* Fine tuning - tuning whole part or training pre training model to train for a specific task
+
+#### Attention mechanism
 
 Transformers has something called attention mechanism 
 
@@ -64,25 +67,24 @@ Attention mechanism provide context around other words in the input
 Which helps transformer to run multiple sequence in parallel
 
 Three main innovation 
-
 - Positional encoding ( store the word order as a numbers ) 
 - ⁠attention 
 - ⁠self attention (Allows neural network to understand word in context of words around it)
 
-****RNN - recurrent neural network
+### RNN - recurrent neural network
 It take a sentence as input and process one by one 
 It has a downside that only one word at a time, so long paragraph cannot be processed as it cannot run in a parallel
 
-****Context window
+### Context window
 The context window is the number of tokens the model can “remember” at once.
 Context windows measured in tokens( smallest unit of measurement for a AI model)
 
-****Token
+### Token
 Can be a part of word, a single character or whole word 
 - Tokeniser - converts a language to tokens 
 A word in English lang has assigned - 1.5tokens
 
-****Context window
+### Context window
 Context window size rapidly increasing (thousands of tokens)
 
 Lot of thing taking space in context window 
@@ -98,10 +100,10 @@ But the larger context windows provide challenges
 2. ⁠takes up space 
 3. ⁠effect performance
 
-**Day 3:** Promting basics, Types of promting and LLM settings
+## **Promting basics, Types of promting and LLM settings**
 <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/e1052c9a-3f8b-4dd8-bb11-4bd494514019" />
 
-**Day 4:** Promting practice
+## **Promting practice**
 Use OpenAI Playground/ChatGPT/Claude: Play with prompts
 
 🧪 Prompting Exercises (Beginner to Intermediate)
@@ -175,9 +177,9 @@ Try temperatures 0.2, 0.7, and 1.0.
 
 
 
-**Day 4:** Promting template
+## **Promting template**
 
-1. Instructional prompt 
+### Instructional prompt 
 Structure : 
 action ( what to be done), format ( how should it present), constrain ( what rules to be followed)
 
@@ -192,7 +194,7 @@ Common mistake to avoid
 - ⁠too ambiguous 
 - ⁠not reviewing output
 
-2.  Role based prompt 
+### Role based prompt 
 
 Prompting based on role 
 Structure : 
@@ -210,9 +212,10 @@ Common mistake to avoid
 3. ⁠no task given 
 4. ⁠Ignoring tones or styles
 
-**Day 6:** Advanced Prompting (ReAct promting, self ask, tree-of-thought (ToT))
+## **Advanced Prompting**
+ReAct promting, self ask, tree-of-thought (ToT)
 
-**Day 7:** Prompt crafting
+## Prompt crafting
 Build a promt based mini tool (eg. resume critic or email writer)
 
 
