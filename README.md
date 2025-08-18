@@ -5,10 +5,15 @@ GenAI learning journey - This repo contains my personal learning notes and pract
 Hi! This repo is where I document everything I’m learning.  
 I use it as a personal knowledge base and for sharing with others.
 
-## 📅 Daily / Weekly Logs
+**Table of Contents**
+---
+* Level 1 : Foundations & Prompting
+* Level 2 : APIs, Tools & Fine-Tuning
+* Level 3 : Retrieval-Augmented Learning (RAG)
+* Level 4 : Agents, Workflow & Advanced Concepts
 
-**Week 1**
-# Topics covered
+Topics covered:
+Week 1: 
 
 **Day 1:** What is GenAI, LLMs, use cases (text, image, code), models (GPT, Claude, LLaMA)
 
