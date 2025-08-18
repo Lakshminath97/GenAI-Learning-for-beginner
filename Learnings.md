@@ -15,7 +15,7 @@ Table of Contents
 ---
 
 ## **What is GenAI?**
----
+
 Gen AI produces original contents based on things learned on large datasets and algorithms based on user prompts
 
 **Steps in Gen AI:**
