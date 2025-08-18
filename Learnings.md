@@ -4,7 +4,7 @@ Goal: Undertand the basics of GenAI, LLMs, and become skilled at promt engineeri
 Table of Contents
 ---
 
-- [Task 1 : Intro to Gen AI](#intro-to-gen-ai)
+- [Task 1 : Intro to Gen AI](#what-is-genai)
 - Task 2 : LLMs 
 - Task 3 : Prompting basics
 - Task 4 : Prompting practice
@@ -14,9 +14,7 @@ Table of Contents
 
 ---
 
-##Intro to Gen AI
-
-What is GenAI?
+## **What is GenAI?**
 ---
 Gen AI produces original contents based on things learned on large datasets and algorithms based on user prompts
 
