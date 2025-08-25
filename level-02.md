@@ -27,11 +27,12 @@ Install Required Tools
 ```bash
 pip install openai
 pip install langchain
-pip install python-dotenv  # For managing API keys ```
-
+pip install python-dotenv  # For managing API keys 
+```
 
 - Get OpenAI API Key / Open Router Key
-Sign up at https://platform.openai.com #For OpenAI API 
+
+Sign up at https://platform.openai.com #For OpenAI API  
 Go to API Keys, generate a key, and save it.
 
 Sign up at https://openrouter.ai/models #For OpenRouter API 
