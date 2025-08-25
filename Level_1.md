@@ -1,4 +1,4 @@
-## Level 1 : Foundations & Prompting
+## Foundations & Prompting
 Goal: Undertand the basics of GenAI, LLMs, and become skilled at promt engineering
 
 Table of Contents
