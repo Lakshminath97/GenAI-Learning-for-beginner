@@ -19,7 +19,6 @@ Table of Contents
 Activity:
 Watch a 5 min YouTube video on “What is an API?” and “What is OpenAI?”
 
-----
 ---
 
 ## **Environment Setup**
@@ -42,6 +41,8 @@ Go to API Keys, generate a key, and save it.
 
 Sign up at https://openrouter.ai/models #For OpenRouter API  
 Go to Keys, generate a key, and save it
+
+---
 
 ## **First OpenRouter API Call**
 
@@ -78,6 +79,7 @@ It’s a way to store and send data that’s:
 -Easy for computers to understand  
 
 Think of it like a digital notebook where you write information in a key-value pair style.
+---
 
 ## 🔗What is LangChain?
 
