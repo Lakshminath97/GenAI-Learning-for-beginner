@@ -78,7 +78,18 @@ Think of it like a digital notebook where you write information in a key-value p
 
 ## Task 11: LangChain Basics
 
-### What is LangChain?
+### 🔗 What is LangChain?
+
+LangChain is an open-source framework for building applications with Large Language Models (LLMs).  
+It extends LLMs beyond text generation by adding:
+
+- **Prompt templates** – reusable & dynamic prompts  
+- **Chains** – link multiple steps (LLM calls, APIs, custom logic)  
+- **Agents** – LLMs that choose tools/actions dynamically  
+- **Memory** – maintain context across interactions  
+- **Data/tool integration** – connect LLMs to databases, APIs, search, and vector stores  
+
+💡 Use cases: chatbots, document Q&A, automation agents, and AI assistants.
 
 ### Install LangChain
 ```bash
