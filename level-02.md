@@ -35,24 +35,25 @@ pip install python-dotenv  # For managing API keys
 Sign up at https://platform.openai.com #For OpenAI API  
 Go to API Keys, generate a key, and save it.
 
-Sign up at https://openrouter.ai/models #For OpenRouter API 
+Sign up at https://openrouter.ai/models #For OpenRouter API  
 Go to Keys, generate a key, and save it
 
-Task 10: Call OpenRouter API
+## Task 10: Call OpenRouter API
 
 - First OpenRouter API Call
 
-import requests
-import json
+```python
+import requests #Lets you make HTTP requests (like GET, POST) to talk to APIs.
+import json #Lets you convert Python data (like dictionaries) to JSON format and vice versa.
 
 response = requests.post(
   url="https://openrouter.ai/api/v1/chat/completions",
   headers={
-    "Authorization": "Bearer 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",
-    "Content-Type": "application/json",
+    "Authorization": "Bearer OpenRouter key",
+    "Content-Type": "application/json", #Tells the API that you’re sending data in JSON format
   },
-  data=json.dumps({
-    "model": "tngtech/deepseek-r1t2-chimera:free",
+  data=json.dumps({ 
+    "model": "tngtech/deepseek-r1t2-chimera:free", #can use any suitable model 
     "messages": [
       {
         "role": "user",
@@ -63,4 +64,8 @@ response = requests.post(
     "max_tokens": 500
   })
 )
+```
+Task:
+Change the role, content and max_tokens and observe the change  
+
 
