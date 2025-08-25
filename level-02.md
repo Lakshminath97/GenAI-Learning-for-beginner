@@ -17,7 +17,7 @@ Activity:
 Watch a 5 min YouTube video on “What is an API?” and “What is OpenAI?”
 
 
-##Task 9: Environment Setup
+## Task 9: Environment Setup
 ---
 - Install Python
 Download and install Python 3.10+ from python.org
