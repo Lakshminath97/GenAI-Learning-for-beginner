@@ -68,4 +68,12 @@ response = requests.post(
 Task:
 Change the role, content and max_tokens and observe the change  
 
+### JSON
+JSON stands for JavaScript Object Notation.  
+It’s a way to store and send data that’s:
+-Easy for humans to read
+-Easy for computers to understand  
+
+Think of it like a digital notebook where you write information in a key-value pair style.
+
 
