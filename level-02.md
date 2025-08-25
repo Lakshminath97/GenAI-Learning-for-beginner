@@ -10,7 +10,7 @@ Table of Contents
 - [Task 10 : LangChain](#what-is-langchain)
 
 ---
-## **Task 8: Understand Basics**
+## **Understand Basics**
 
 - What is an API? (It’s like a waiter between your app and OpenAI)
 - What is an LLM? (Large Language Model – ChatGPT is one)
