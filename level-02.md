@@ -79,6 +79,7 @@ It’s a way to store and send data that’s:
 -Easy for computers to understand  
 
 Think of it like a digital notebook where you write information in a key-value pair style.
+
 ---
 
 ## 🔗What is LangChain?
@@ -179,3 +180,5 @@ output = chain1.run("Artificial Intelligence")
 print(output)
 
 ```
+
+---
