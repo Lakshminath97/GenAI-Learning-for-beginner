@@ -1,7 +1,14 @@
 ## APIs, Tools & Fine Tuning
+Goal: Undertand the basics of GenAI, LLMs, and become skilled at promt engineering
 
-Task 8: Understand Basics
+Table of Contents
+---
 
+
+
+---
+## Task 8: Understand Basics
+---
 - What is an API? (It’s like a waiter between your app and OpenAI)
 - What is an LLM? (Large Language Model – ChatGPT is one)
 - Why use LangChain? (It lets you chain multiple AI steps together like building blocks)
@@ -10,13 +17,18 @@ Activity:
 Watch a 5 min YouTube video on “What is an API?” and “What is OpenAI?”
 
 
-Task 9: Environment Setup
-
+##Task 9: Environment Setup
+---
 - Install Python
 Download and install Python 3.10+ from python.org
 
 - Install VS Code (or use Google Colab for zero setup)
 Install Required Tools
+```bash
+pip install openai
+pip install langchain
+pip install python-dotenv  # For managing API keys ```
+
 
 - Get OpenAI API Key / Open Router Key
 Sign up at https://platform.openai.com #For OpenAI API 
