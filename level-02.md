@@ -19,7 +19,7 @@ Table of Contents
 Activity:
 Watch a 5 min YouTube video on “What is an API?” and “What is OpenAI?”
 
---
+----
 
 ## **Environment Setup**
 
