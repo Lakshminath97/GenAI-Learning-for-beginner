@@ -214,7 +214,7 @@ Common mistake to avoid
 
 ## **Advanced Prompting**
 
-1. ReAct Prompting (Reason + Act)
+**1. ReAct Prompting (Reason + Act)**
 
 #### Concept:
 ReAct combines thinking (reasoning) and action in a step-by-step way. The AI not only thinks through a problem but also performs actions like searching, calculating, or using tools, in the same process.
@@ -231,7 +231,7 @@ Act: “Look up the capital of France.”
 
 ##### Key idea: AI thinks and acts together, instead of giving a direct answer blindly.
 
-2. Self-Ask Prompting
+**2. Self-Ask Prompting**
 
 #### Concept:
 Self-Ask is like breaking a big question into smaller questions. The AI answers each smaller question and then combines them to solve the main question.
@@ -249,7 +249,7 @@ Self-Ask Step 2: “Which river flows through New York City?” → “The Hudso
 
 ##### Key idea: AI asks itself smaller questions to get a more accurate answer.
 
-3. Tree-of-Thought (ToT) Prompting
+**3. Tree-of-Thought (ToT) Prompting** 
 
 #### Concept:
 ToT is like building a tree of possible reasoning paths. The AI explores multiple ways to solve a problem, checks them, and then picks the best one.
