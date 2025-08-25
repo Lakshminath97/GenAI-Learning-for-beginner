@@ -8,7 +8,7 @@ Table of Contents
 
 ---
 ## Task 8: Understand Basics
----
+
 - What is an API? (It’s like a waiter between your app and OpenAI)
 - What is an LLM? (Large Language Model – ChatGPT is one)
 - Why use LangChain? (It lets you chain multiple AI steps together like building blocks)
@@ -18,7 +18,7 @@ Watch a 5 min YouTube video on “What is an API?” and “What is OpenAI?”
 
 
 ## Task 9: Environment Setup
----
+
 - Install Python
 Download and install Python 3.10+ from python.org
 
@@ -76,4 +76,92 @@ It’s a way to store and send data that’s:
 
 Think of it like a digital notebook where you write information in a key-value pair style.
 
+## Task 11: LangChain Basics
 
+### What is LangChain?
+
+### Install LangChain
+```bash
+pip install langchain
+pip install openai
+```
+### First LangChain Example
+```python
+from langchain_openai import ChatOpenAI
+from langchain_core.messages import HumanMessage
+import os
+
+
+# Your OpenRouter API key
+OPENROUTER_API_KEY = "KEY"
+# Setup ChatOpenAI with OpenRouter
+chat = ChatOpenAI(
+    model="mistralai/mistral-7b-instruct:free",
+    openai_api_key=OPENROUTER_API_KEY,
+    openai_api_base="https://openrouter.ai/api/v1",
+    temperature=0.7
+)
+# Define the prompt
+messages = [HumanMessage(content="What is the meaning of life?")]
+
+# Use .invoke() for latest LangChain usage
+response = chat.invoke(messages)
+
+print(response.content)
+
+```
+### Chain Two LLMs
+```python
+openai_api_base = "https://openrouter.ai/api/v1"
+openai_api_key=OPENROUTER_API_KEY
+
+#Inheriting
+def call_openai(model, temperature):
+    return ChatOpenAI(
+    model=model,
+    openai_api_key=openai_api_key,
+    openai_api_base=openai_api_base,
+    temperature=temperature,
+    )
+
+#Main Function   
+from langchain_openai import ChatOpenAI
+from langchain.chains import LLMChain, SimpleSequentialChain
+from langchain.prompts import PromptTemplate
+
+
+# Your OpenRouter API key
+OPENROUTER_API_KEY = "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"
+# Setup ChatOpenAI with OpenRouter
+chat1 = call_openai(model="mistralai/mistral-7b-instruct:free", temperature=0.7)
+chat2 = call_openai(
+    model="mistralai/mistral-7b-instruct:free",
+    temperature=0.5
+)
+
+prompt1 = PromptTemplate(
+    input_variables=["topic"],
+    template="List 3 key points about the topic: {topic}"
+)
+
+prompt2 = PromptTemplate(
+    input_variables=["points"],
+    template="Expand the following points into a short paragraph:\n{points}"
+)
+
+print(f'PromptTemplate is here \n {prompt1} \n')
+
+chain1 = LLMChain(llm=chat1, prompt=prompt1)
+print(chain1)
+chain2 = LLMChain(llm=chat2, prompt=prompt2)
+
+overall_chain = SimpleSequentialChain(
+    chains=[chain1, chain2],
+    verbose=True  # Optional: shows intermediate steps
+)
+
+# Run the chain
+output = chain1.run("Artificial Intelligence")
+print(output)
+
+```
