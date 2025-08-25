@@ -273,9 +273,4 @@ Build a promt based mini tool (eg. resume critic or email writer)
 
 
 
-## 📚 Topics I’m Learning
-- Python basics  
-- NX Open API with C#  
-- Machine learning fundamentals  
-
 ## 🎯 Goals
